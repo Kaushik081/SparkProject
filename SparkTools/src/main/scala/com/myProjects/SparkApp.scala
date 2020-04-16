@@ -96,7 +96,6 @@ object SparkApp {
            Some(packet)
          }catch {
            case t: Throwable => LOGGER.error(s"Failed to Deserialize ; error : ${t.getMessage}")
-             ///In this case send it to a different kafka topic which consists error data
              None
          }
        })
