@@ -1,0 +1,24 @@
+{
+"namespace":"org.Sample",
+"type":"record",
+"name":"Activity",
+"fields":[
+{"name":"visitorId","type":["string","null"]},
+{"name":"orderId","type":["int","null"]},
+{
+            "name":"products",
+            "type":{
+                "type": "array",
+                "items":{
+                    "name":"info",
+                    "type":"record",
+                    "fields":[
+                        {"name":"id", "type":"string"},
+                        {"name":"name", "type":"string"},
+                        {"name":"quantity", "type":"int"}
+                    ]
+                }
+            }
+}
+]
+}

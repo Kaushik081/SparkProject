@@ -1,0 +1,23 @@
+{
+"namespace":"org.Sample",
+"type":"record",
+"name":"ClickStream",
+"fields":[
+{"name":"visitorId","type":["string","null"]},
+{
+            "name":"products",
+            "type":{
+                "type": "array",
+                "items":{
+                    "name":"info",
+                    "type":"record",
+                    "fields":[
+                        {"name":"id", "type":"string"},
+                        {"name":"name", "type":"string"},
+                        {"name":"interest", "type":"double"}
+                    ]
+                }
+            }
+}
+]
+}
